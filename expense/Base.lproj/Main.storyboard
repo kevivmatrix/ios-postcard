@@ -66,7 +66,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mMk-cO-cnY">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="224" y="137" width="80" height="80"/>
+                                    <rect key="frame" x="230" y="78" width="80" height="80"/>
                                 </variation>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ym1-cS-h4a">
@@ -104,7 +104,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="72" width="288" height="57"/>
+                                    <rect key="frame" x="16" y="122" width="200" height="57"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkZ-5o-hib">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="15" y="85" width="200" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -116,6 +125,7 @@
                                 <exclude reference="Bth-sk-pWV"/>
                                 <exclude reference="2el-ec-Phm"/>
                                 <exclude reference="Qvk-LR-CW6"/>
+                                <exclude reference="lkZ-5o-hib"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -125,6 +135,7 @@
                                 <include reference="Bth-sk-pWV"/>
                                 <include reference="2el-ec-Phm"/>
                                 <include reference="Qvk-LR-CW6"/>
+                                <include reference="lkZ-5o-hib"/>
                             </mask>
                         </variation>
                     </view>
@@ -133,6 +144,7 @@
                     <connections>
                         <outlet property="messageLabel" destination="Qvk-LR-CW6" id="aaP-X4-zJK"/>
                         <outlet property="messageTextField" destination="Bth-sk-pWV" id="h6V-6L-PXi"/>
+                        <outlet property="nameLabel" destination="lkZ-5o-hib" id="Rej-iz-Eq5"/>
                         <outlet property="nameTextField" destination="ym1-cS-h4a" id="zuM-BW-fWa"/>
                         <outlet property="sendMailButton" destination="2el-ec-Phm" id="nfJ-QD-U3d"/>
                     </connections>
